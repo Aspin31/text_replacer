@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Text Replacer",
+  "version": "1.0",
+  "description": "Заменяет 'зд' на 'Здравствуйте, сделано' при нажатии Ctrl.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
